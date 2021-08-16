@@ -1,0 +1,229 @@
+.header {
+    background-color: #FFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .75rem;
+    box-shadow: 0px 5px 5px #00000020;
+    z-index: 10;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .swiper-content {
+    padding-top: 120px
+}
+
+@media (max-width: 600px) {
+    .sticky + .swiper-content {
+        padding-top: 200px
+    }
+}
+
+.header__topbar {
+    background-color: #E6E6E6;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.benefits-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .header__topbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-item_hide{
+        display: none;
+    }
+}
+
+.header__content {
+    width: 100%;
+    height: auto;
+    padding: 0.25rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .header__content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__logo {
+        width: 20vw;
+    }
+}
+
+.header-content_search_cart {
+    display: flex;
+    width: 66%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .header-content_search_cart {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.header__search {
+    position: relative;
+    display: flex;
+    width: 420px;
+}
+
+.header__input {
+    position: relative;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    width: 33vw;
+    background-color: white;
+    color: var(--gray);
+    border: 2px solid #e7e7e7;
+    opacity: .6;
+}
+
+.header__input:hover {
+    opacity: 1;
+}
+
+.header__search__btn{
+    background-color: #E6E6E6;
+    color: var(--gray);
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-radius: 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.header__search__btn > img {
+    width: 1rem
+}
+
+.header__search__btn:hover {
+    background-color: var(--gray);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header__minicart {
+    position: relative;
+    padding: 15px
+}
+
+.header__minicart-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-image: url(/images/market.svg);
+}
+
+.header__minicart-total {
+    border-radius: 100%;
+    background-color: #F5265B;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    position: absolute;
+    right: -14px;
+    top: -12px;
+    text-align: center;
+}
+
+.header__menu {
+    width: 100%;
+}
+
+.header__menu__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__link {
+    font-weight: 700;
+    padding-top: .7rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-bottom: .7rem;
+    color: var(--gray);
+    opacity: 0.6;
+    transition: 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+@media (max-width: 400px) {
+    .header__link {
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+}
+
+.header__link > a {
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 515px) {
+    .header__link > a {
+        font-size: 3vw;
+    }
+}
+
+.header__link:hover{
+background-color: var(--gray);
+color: var(--white);
+font-weight: 700;
+text-decoration: none;
+}
+
+.benefits-container {
+    text-align: center;
+}
+
+.benefits-item {
+    color: #000;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 40px;
+}
+

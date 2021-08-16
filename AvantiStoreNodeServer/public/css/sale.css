@@ -1,0 +1,33 @@
+.sale__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.sale__banner{
+    width: 40%;
+    max-width: 400px;
+}
+
+@media (max-width: 500px) {
+    .sale__banner {
+        display: none;
+    }
+}
+
+.sale__banner__img {
+    width: 100%
+}
+
+.sale__cards {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .sale__cards {
+        width: 100%;
+    }
+}

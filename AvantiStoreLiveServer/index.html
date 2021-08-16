@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avanti Store - Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/reset.css"/>
+        <link rel="stylesheet" href="/css/base.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/carousel.css"/>
+        <link rel="stylesheet" href="/css/sale.css"/>
+        <link rel="stylesheet" href="/css/cards.css"/>
+        <link rel="stylesheet" href="/css/bestSellers.css"/>
+        <link rel="stylesheet" href="/css/infos.css"/>
+    </head>
+    
+    <body>
+        <header class="header" id="myHeader">
+            <div class="header__topbar">
+                <p class="benefits-item">Até 6x Sem Juros</p>
+                <p class="benefits-item benefits-item_hide">FRETE GRÁTIS acima de R$299!</p>
+                <p class="benefits-item benefits-item_hide"><a href="#">Trocas e Devoluções</a></p>
+            </div>
+
+             <div class="header__content">
+                 <div class="header__logo">
+                    <img src="/images/logoavanti.svg" alt="">
+                 </div>
+             
+                 <div class="header-content_search_cart">
+                    <div class="header__search">
+                        <input class="header__input" placeholder="Buscar"/>
+                        <button class="header__search__btn"><img src="/images/loupe.png" ></button>
+                    </div>
+                
+                    <div class="header__minicart">
+                        <a href="#" class="header__minicart-icon">
+                            <span class="header__minicart-total">0</span>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="header__menu">
+                <menu class="header__menu__nav">
+                    <li class="header__link"><a href="#">NOVIDADES</a></li>
+                    <li class="header__link"><a href="#">PARA ELES</a></li>
+                    <li class="header__link"><a href="#">PARA ELAS</a></li>
+                    <li class="header__link"><a href="#">KIDS</a></li>
+                </menu>
+            </div>
+        </header>
+
+        <div class="swiper-content">
+            <section class="swiper-container mySwiper" style="height:auto" style="z-index: -1">
+                <div class="swiper-wrapper carousel"></div>
+                <div class="swiper-pagination"></div>
+             </section>
+        </div>
+
+        <main>
+            <section class="sales container">
+                <h1 class="section__titles">PROMOÇÃO DO DIA</h1>
+                <div class="sale__content">
+                    <aside class="sale__banner" id="sale__banner"></aside>
+                    <div class="sale__cards myDIV" id="sale"></div>
+                </div>
+            </section>
+    
+            <div class="swiper-content">
+                <section class="swiper-container mySwiper" style="height:auto" style="z-index: -1">
+                    <div class="swiper-wrapper carousel"></div>
+                    <div class="swiper-pagination"></div>
+                </section>
+            </div>
+    
+            <section class="best__sellers container">
+                <h1 class="section__titles">OS MAIS VENDIDOS</h2>
+                <div class="best__sellers__cards"></div>
+            </section>
+    
+            <p class="container notes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, expedita!    Neque, saepe. Doloribus quam, dolores, nemo, quaealias deserunt cumque pariatur dolore adipisci ullam  repudiandae voluptatibus sed fugit sapiente architecto! Lorem ipsum dolor, sitamet consectetur adipisicing   elit. Voluptatibus, expedita! Neque, saepe. Doloribus quam, dolores, nemo, quae alias deserunt cumque pariatur    dolore adipisci ullam repudiandae voluptatibus sed fugit sapiente architecto!</p>
+    
+            <section class="infos container">
+                <div class="infos-content">
+                    <div class="infos-categories">
+                        <h2 class="infos-subtitles">Categorias</h3>
+                        <ul class="infos-items">
+                            <li class="infos-item"><a href="#">Novidades</a></li>
+                            <li class="infos-item"><a href="#">Para Eles</a></li>
+                            <li class="infos-item"><a href="#">Para Elas</a></li>
+                            <li class="infos-item"><a href="#">Kids</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="infos-institution">
+                        <h2 class="infos-subtitles">Institucional</h3>
+                        <ul class="infos-items">
+                            <li class="infos-item"><a href="#">Privacidade e Termos de Uso</a></li>
+                            <li class="infos-item"><a href="#">Trabalhe Conosco</a></li>
+                            <li class="infos-item"><a href="#">Política de Troca e Devolução</a></li>
+                            <li class="infos-item"><a href="#">Política de Frete</a></li>
+                            <li class="infos-item"><a href="#">Fale Conosco</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="infos-contacts">
+                        <h2 class="infos-subtitles">Fale Conosco</h3>
+                        <ul class="infos-items">
+                            <li class="infos-item"><a href="#">atendimento@avanti.com.br</a></li>
+                            <li class="infos-item"><a href="#">(14)00000-0000</a></li>
+                            <div class="infos-social_media">
+                                <a href="#"><img src="/images/facebook.svg"/></a>
+                                <a href="#"><img src="/images/instagram.svg"/></a>
+                                <a href="#"><img src="/images/linkedin.svg"/></a>
+                                <a href="#"><img src="/images/whatsapp.svg"/></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+            
+        <footer>
+            <p class="container footer-notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus proin   neque montes, eget. Porta et diam nunc in massa turpis ultricies. Nibh ullamcorper id tellus volutpat     elementum morbi egestas nulla id. In in in leo sed mattis.</p>
+        </footer>
+
+        <div class="whatsapp-icon"><a href="#"></a></div>
+
+        <!-- Script Fixed Header -->
+        <script type="text/javascript" src="js/fixedHeader.js"></script>
+
+        <!-- Script Geral -->
+        <script type="text/javascript" src="js/geral.js"></script>
+
+        <!-- Script Carousel -->
+        <script type="text/javascript" src="js/carousel.js"></script>
+    </body>
+</html>

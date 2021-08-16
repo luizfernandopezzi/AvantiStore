@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <filter id="remove" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="remove-2" data-name="remove" transform="translate(12 12)">
+    <g transform="matrix(1, 0, 0, 1, -12, -12)" filter="url(#remove)">
+      <rect id="remove-3" data-name="remove" width="32" height="32" rx="16" transform="translate(12 12)" fill="#1b4d9b"/>
+    </g>
+    <path id="Vector" d="M12,2H0V0H12Z" transform="translate(9.666 15)" fill="#fff"/>
+  </g>
+</svg>
